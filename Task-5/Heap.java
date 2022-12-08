@@ -37,17 +37,17 @@ public class Heap {
 
     }
 
-    static void heapSort(int arr[], int n) {
+  /*  static void heapSort(int arr[], int n) {
         buildHeap(arr, n);
         for (int i = n - 1; i >= 0; i--) {
             swap(arr[0], arr[i]);
             heapyfy(arr, i, 0);
         }
     }
-
+*/
     public static void main(String[] args) {
         int arr[] = {81, 13, 77, 24, 35, 61, 48, 3, 23, 87, 92, 95, 74, 57, 99, 86, 28, 15, 55};
-        heapSort(arr, arr.length - 1);
+        buildHeap(arr, arr.length - 1);
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i] + " ");
         }
